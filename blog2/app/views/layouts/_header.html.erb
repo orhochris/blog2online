@@ -1,0 +1,40 @@
+<header>
+  <!-- class="contain-to-grid">-->
+  <div id="header-wrapper">
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><%= link_to 'Chris Bagi', root_path, style: 'color:White' %></h1>
+        </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="active"><%= link_to 'Articles', controller: 'articles' %></li>
+          <li class="has-dropdown">
+            <a href="#">Menu</a>
+            <ul class="dropdown">
+              <li><%= link_to "About Chris", "/static_pages/about" %></li>
+              <li><%= link_to "Contact", "/static_pages/contact" %></li>
+              <!--<li><%= link_to "Speaking", "/static_pages/speaking" %></li>
+              <li><%= link_to "Videos", "/static_pages/videos" %></li>
+              <li><%= link_to "Interviews", "/static_pages/interviews" %></li>
+              <li><%= link_to "Podcasts", "/static_pages/podcasts" %></li>-->
+              <li><%= link_to "Donate", "/static_pages/donate" %></li>
+              <li class="divider"><%= link_to "Disclaimer", "/static_pages/disclaimer" %></li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Left Nav Section -->
+        <ul class="left">
+          <li><%= link_to 'New article', new_article_path %></li>
+        </ul>
+      </section>
+    </nav>
+  </div>
+  <!--div>-->
+</header>

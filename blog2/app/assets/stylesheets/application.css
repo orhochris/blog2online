@@ -1,0 +1,231 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require foundation_and_overrides
+
+ */
+/* Application- (all pages)             */
+
+html, 
+.body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+.wrapper {
+	min-height: 100%;
+	position: relative;
+}#content {
+	padding: 10px;
+	padding-bottom: 80px;
+}
+
+#application-wrapper {
+	height: auto;
+}
+
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.paragraph-buffer {
+	height: 100px;
+}
+/*------------------------Header-------------------------------------------------------*/
+
+#header {
+	padding: 10px;
+}
+
+
+
+/*------------------------CONTENT---------------------------------------------------------*/
+
+
+
+
+/* Home Page */
+#slider {
+	height: 12rem;
+	background-color: gray;
+	opacity: 1;
+	color: white;
+}
+#example-orbit-content {
+height: 100%;
+}
+ 
+.slider-slide {
+	padding-left: 5rem;
+	color: white;
+}
+
+#home-container-1 {
+	background: linear-gradient(
+		rgba(0, 0, 0, 0.45),
+		rgba(0, 0, 0, 0.45)
+	),
+	url('/assets/Bookshelf.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: black;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+}
+
+#image-assistance {
+	visibility: hidden;
+}
+
+.home-banner1 {
+	color: white;
+	opacity: 1;
+	text-align: center;
+	vertical-align: center;
+	padding-top: 4em;
+	padding-bottom: -10px;
+	font-size: 48pt;
+	font-famiy: 'times new roman', serif;
+}
+
+.home-banner2 {
+	color: white;
+	opacity: 1;
+	text-align: center;
+	padding-top: -10px;
+	vertical-align: center;
+	font-size: 48pt;
+	font-famiy: 'times new roman', serif;
+}
+
+.home-banner-subtitle {
+	color: white;
+	opacity: 1;
+	text-align: center;
+	vertical-align: center;
+	font-famiy: 'times new roman', serif;
+}
+
+
+/* About Page */
+.container-about {
+	height: 90%;
+}
+
+.text-paragraph {
+text-align: justify;
+
+}
+#about-row-1 {
+	margin-bottom: 150px;
+}
+
+
+#long-bio {
+	padding-left: .85em;
+	padding-top: 2em;
+}
+
+
+#about-row-2 {
+	padding-bottom: 5em;
+
+}
+
+
+
+
+
+/* Contact Page */
+
+
+
+
+
+/* Disclaimer Page */
+
+#disclaimer-text {
+	text-align: justify;
+}
+
+
+
+/* Donate Page */
+#donate-container {
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: relative;
+	padding-bottom: 10em;
+}
+
+#donate-text {
+	padding-top: 2em;
+	text-align: justify;
+}
+
+/*-----------------------FOOTER----------------------------------------------------------*/
+
+#footer, 
+footer {
+	width: 100%;
+	height: 65px;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	background: #2980b9;
+	margin-top: 10px;
+}
+
+
+#copyright-left {
+	float:left;
+	font: helvetica;
+	margin-top: 10px;
+}
+#copyright-right {
+	float:right;
+	padding-top: 4px;
+	margin-top: 10px;
+}
+#copyright-left,
+#copyright-right {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);d
+}
+#copyright-right.hover {
+	color: #blue;
+}
+
+
+.about-text {
+	float: right;
+	text-align: justify;
+	text-justify: inter-word;
+	
+}
+.about-picture{
+	float: left;
+	width: 40px;
+}
+#social-icon {
+	width=35px;
+	height=35px;
+}
+

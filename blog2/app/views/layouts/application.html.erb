@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href='http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--<title><%= content_for?(:title) ? yield(:title) : "ChrisBagi.com" %></title>-->
+    <title><%= yield(:title) %> | ChrisBagi.com</title>
+    <%= stylesheet_link_tag    "application", media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag "vendor/modernizr" %>
+    <%= javascript_include_tag "application" %>
+    <%= javascript_include_tag 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+    <link rel="stylesheet" media="screen" href="assets/stylesheets/foundation_and_overrides.css"
+  </head>
+  <body>
+    <!-- APPLICATION total page -->
+    <div id="application-wrapper">
+
+      <!--  HEADER -->
+      
+      <div class="container">
+        <%= render "layouts/header" %>
+      </div>
+
+      <!-- CONTENT for each page -->
+
+      <div class="container">
+        <%= yield %>
+      </div>
+      
+      <!-- FOOTER --> 
+
+      <div class="container">
+        <%= render "layouts/footer" %>
+      </div>
+
+    </div>
+
+    <!-- JAVASCRIPT -->
+    <script>
+      $(document).foundation();
+    </script>
+   </body>
+</html>
